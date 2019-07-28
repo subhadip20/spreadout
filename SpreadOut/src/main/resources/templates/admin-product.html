@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Product Information</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+     <link href="/css/SpreadOut.css" rel="stylesheet">
+</head>
+<body>
+	<div th:switch="${products}">
+    <h2 th:case="null">No products yet!</h2>
+        <div th:case="*">
+            <h2>Products</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>price</th>
+                        <th>size</th>
+                        <th>Discount</th>
+                         <th>Material</th>
+                        <th>Color</th>
+                        <th>Gender</th>
+                        <th>Rating</th>
+                         <th>Image</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+               <tr th:each="product : ${products}">
+               <td th:text="${product.name}"></td>
+                    <td th:text="${product.price}"></td>
+                    <td th:text="${product.size}"></td>
+                    <td th:text="${product.discount}"></td>
+                    <td th:text="${product.material}"></td>
+                    <td th:text="${product.color}"></td>
+                    <td th:text="${product.gender}"></td>
+                    <td th:text="${product.rating}"></td>
+                  <td > <img th:src="${product.imageUrl}" class="product-image"></td>
+                  <td><a th:href="@{/studentedit/{id}(id=${product.productId})}">Edit</a></td>
+                  <td><a th:href="@{/studentedit/{id}(id=${product.productId})}">Dele</a></td>
+              
+                 
+                </tr> 
+            </tbody>
+        </table>
+    </div>      
+    <p><a href="/admin-product-add">Add a new user</a></p>
+</div>
+</body>
+</html>

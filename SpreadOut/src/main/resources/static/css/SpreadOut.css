@@ -1,0 +1,110 @@
+.product-image {
+	width: 160px;
+}
+
+.bordereRed {
+	border: 1px;
+	border-style: solid;
+	border-color: #FF0000;
+	padding: 1px;
+	/* margin-bottom: 1em; */
+	/* float: left; */
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	/* padding: 10px 5px 10px 5px; */
+	padding-left: 10px;
+	padding-right: 10px;
+	/* left: -6px; */
+}
+
+.bordereGreen {
+	border: 1px;
+	border-style: solid;
+	border-color: #0bb919;
+	padding: 1px;
+	/* margin-bottom: 1em; */
+	/* float: left; */
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	background-color: rgba(255, 255, 255, 0.7);
+	font-size: 12px;
+	/* padding: 10px 5px 10px 5px; */
+	padding-left: 10px;
+	padding-right: 10px;
+	left: 0px;
+}
+
+.sortSelect {
+	text-decoration: underline;
+	font-weight: bold;
+	color: #f95353;
+}
+
+.sortUnselect {
+	
+}
+
+.sortDiv {
+	text-align: left;
+	font-size: 15px;
+}
+
+.sort {
+	padding: 16px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.bolder {
+	font-weight: bolder;
+}
+
+.wishlist {
+	position: absolute;
+	z-index: 2;
+	top: 2px;
+	right: 4px;
+	/* height: 26px; */
+	font-size: 27px;
+	cursor: pointer;
+}
+
+.cartItem {
+	position: absolute;
+	right: 27px;
+}
+
+.viewDetails {
+	font-size: 14px;
+	position: absolute;
+	left: 36%;
+	text-decoration: underline;
+	/* top: -7px; */
+	bottom: 3%;
+}
+
+.nextPrev {
+	font-size: 35px;
+	color: #524747;
+}
+
+#regform {
+	display: none;
+}
+#loginlink{
+	display:none;
+}
+.well{padding-top: 19px;
+    /* text-decoration: underline; */
+    color: #2967a9;
+    font-size: 14px;
+    font-weight: 600;}
+    
+    .hidden{
+    display:none;}
